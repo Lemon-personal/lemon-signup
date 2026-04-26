@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'Troika';
+    src: url('fonts/Troika.woff2') format('woff2'),
+        url('fonts/Troika.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    display: flex;
+    margin: 0;
+}
+
+.container:first-of-type{
+    background-image: url("images/nick-fewings-rg02TW2v2G8-unsplash.jpg");
+    background-size: cover;
+
+    position: relative;
+
+    min-width: 35vw;
+    height: 100vh;
+}
+
+.container .heading-banner{
+    font-family: "Troika", sans-serif;
+    font-size: 2rem;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  rgba(1,1,1,0.50);
+
+
+    position: absolute;
+    top: 5rem;
+    width: 100%;
+    min-height: 10%;
+}
+
+
+.container:last-of-type{
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+
+    min-width: 65vw;
+    height: 100vh;
+}
+
+.descriptor{
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    font-weight: bolder;
+
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    min-width: 100%;
+    min-height: 33%;
+}
+
+.descriptor p{
+    width: 70%;
+    margin-left: 2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.descriptor p:last-of-type{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.form-inputs{
+    background-color: azure;
+    min-height: 33%;
+    box-shadow: 10px 5px 5px rgba(1,1,1,0.25);
+}
