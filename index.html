@@ -24,10 +24,40 @@
             <p>Sign up now to join!</p>
             <p>You know you want to...</p>
         </div>
-        <form action=""></form>
-            <div class = "form-inputs">
+        <form action="">
+            <div class = "form-container">
+                <h1>Let's do this!</h1>
+
+
+                <div class = "form-inputs">
+                <div class = "form-column">
+                    <label for="first">First Name</label>
+                    <input type="text" name="first" placeholder="Alice" required>
+                
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="alicedoe@example.com" required>
+                
+                    <label for="pass">Password</label>
+                    <input type="text" name="pass" required minlength="8">
+
+                </div>
+                
+                <div class = "form-column">
+                    <label for = "last">Last Name</label>
+                    <input type="text" name="last" placeholder="Doe" required>
+
+                    <label for = "phone">Phone Number</label>
+                    <input type="tel" name = "phone" placeholder="808-XXX-XXXX">
+
+                    <label for = "confirm-pass">Confirm Password</label>
+                    <input type="text" name="confirm-pass" required minlength="8">
+                </div>
+                </div>
 
             </div>
+            <button type="submit">Create Account</button>
+            <p> Already have an account?<a href="">Log in</a></p>
+        </form>
     </div>
 </body>
 </html>

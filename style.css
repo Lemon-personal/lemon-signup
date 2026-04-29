@@ -12,6 +12,11 @@ body {
     margin: 0;
 }
 
+h1{
+    margin: 0;
+}
+
+
 .container:first-of-type{
     background-image: url("images/nick-fewings-rg02TW2v2G8-unsplash.jpg");
     background-size: cover;
@@ -75,8 +80,69 @@ body {
     margin-bottom: 2rem;
 }
 
-.form-inputs{
-    background-color: azure;
+.form-container{
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    color:darkslategray;
+
+    background-color: white;
+    padding: 2rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 2rem;
+
     min-height: 33%;
     box-shadow: 10px 5px 5px rgba(1,1,1,0.25);
+}
+
+.form-inputs{
+    display: flex;
+    gap: 5rem;
+}
+
+.form-column{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    margin-bottom: 1.5rem;
+    padding: 7px;
+
+    width: 250px
+}
+
+input[name="pass"]:invalid , input[name="confirm-pass"]:invalid{
+    border-color: red;
+}
+
+button[type = "submit"]{
+    font-family: "Roboto", sans-serif;
+    color:white;
+    font-size: 1rem;
+    font-weight: bolder;
+
+    margin: 2rem;
+    margin-bottom: 0.5rem;
+
+    background-color:goldenrod;
+    box-shadow: none;
+    border-radius: 5px;
+    border-color: goldenrod;
+
+    width: 150px;
+    height: 50px;
+}
+
+form p{
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder;
+    margin-left: 2rem;
+}
+
+p a{
+    text-decoration: none;
+    color: goldenrod;
 }
